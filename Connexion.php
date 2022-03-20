@@ -1,6 +1,6 @@
 <?php
 
-class ConnexionBD{
+class Connexion{
 
 	protected static $bdd;
 
