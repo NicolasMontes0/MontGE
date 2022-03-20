@@ -7,7 +7,7 @@ class ModRecherche{
 	private $controleur;
 
 	public function __construct(){
-		$this->controleur = new ContRecherche();
+		$this->controleur = new ContAccueil();
 		if( isset($_GET['action']) ){
 			$choix=htmlspecialchars($_GET['action']);
 			switch($choix){
@@ -25,7 +25,5 @@ class ModRecherche{
 		}
 	}
 }
-
-$modRecherche = new ModRecherche();
 
 ?>

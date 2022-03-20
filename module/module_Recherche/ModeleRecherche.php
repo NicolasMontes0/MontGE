@@ -1,8 +1,8 @@
 <?php
 if (!defined('CONST_INCLUDE')){die('Accès direct interdit');}
-require_once('./ConnexionBD.php');
+require_once('./Connexion.php');
 
-class ModeleRecherche extends ConnexionBD{
+class ModeleRecherche extends Connexion{
 
 	private $requestPrepare;
 	private $request;
@@ -16,6 +16,6 @@ class ModeleRecherche extends ConnexionBD{
 	public function rechercheParNom(){
 		return null;
 	}
-	
-} 
+
+}
 ?>
