@@ -1,0 +1,43 @@
+* {
+    margin-top: 0%;
+}
+
+header {
+	background-color: #6A7181;
+	height: 75px;
+}
+
+nav a {
+	text-decoration: none;
+	color:white;
+	font-size: 1.2em;
+}
+
+nav {
+	margin-left:160px;
+	padding-left:55px;
+	margin-bottom: 100px;
+}
+#nav {
+	margin-top: -50px;
+}
+
+footer {
+	background-color: #6A7181;
+	display: flex;
+	justify-content: center;
+}
+
+.footerButton {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;.
+	border:solid;
+}
+
+.sousFooter p {
+	text-align: center;
+	color: white;
+}
+
+
