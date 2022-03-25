@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8" />
     <title>MontGE</title>
@@ -8,10 +8,10 @@
 
 <body>
 <header>
-    <a><img src="./images/icone.jpg"/ width = 150px></a>
+    <a href="index.php?module=Accueil"><img src="./images/icone.jpg"/ width = 150px></a>
     <div id="nav">
         <nav>
-            <a href="index.php?module=Recherche&action=parNom">Recherche</a>
+            <a href="index.php?module=Recherche&action=triDispo">Réserver</a>
         </nav>
     </div>
 </header>
@@ -24,6 +24,10 @@
         $module = "accueil";
 
     switch($module){
+        case "Recherche" :
+            include_once 'module/module_Recherche/ModRecherche.php';
+            $mod = new ModRecherche();
+            break;
         default :
             include_once 'module/module_Accueil/ModAccueil.php';
             $mod = new ModAccueil();

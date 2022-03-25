@@ -1,17 +1,22 @@
 <?php
-if (!defined('CONST_INCLUDE')){die('Accès direct interdit');}
-include_once('./VueIndex.php');
 
-echo "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
-
-class VueRecherche extends VueIndex{
+class VueRecherche {
 
 	public function __construct(){
-        echo '<link rel="stylesheet" type="text/css" href="module/module_Recherche/VueRecherche.css"/>';
+        //echo '<link rel="stylesheet" type="text/css" href="module/module_Recherche/VueRecherche.css"/>';
     }
 
-	public function afficheParNom(){
-		echo "Bonjour !";
+	public function afficheDispo($result){
+        echo '<p>PC disponible</p>';
+        foreach ($result as $key ) {
+
+            echo "<a>";
+            echo "<div>";
+            echo "$key[0]";
+            echo "Commentaire : ".$key[1];
+            echo "</div>";
+            echo "</a>";
+        }
 	}
 
 }

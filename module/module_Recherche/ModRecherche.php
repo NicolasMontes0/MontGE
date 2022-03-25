@@ -1,5 +1,4 @@
 <?php
-if (!defined('CONST_INCLUDE')){die('Accès direct interdit');}
 require_once('ContRecherche.php');
 
 class ModRecherche{
@@ -7,12 +6,12 @@ class ModRecherche{
 	private $controleur;
 
 	public function __construct(){
-		$this->controleur = new ContAccueil();
+		$this->controleur = new ContRecherche();
 		if( isset($_GET['action']) ){
 			$choix=htmlspecialchars($_GET['action']);
 			switch($choix){
-				case "parNom":
-					$this->controleur->rechercheParNom();
+				case "triDispo":
+					$this->controleur->triDispo();
 					break;
 				default:
 					?>

@@ -1,5 +1,4 @@
 <?php
-if (!defined('CONST_INCLUDE')){die('Accès direct interdit');}
 require_once('ModeleRecherche.php');
 require_once('VueRecherche.php');
 
@@ -13,8 +12,8 @@ class ContRecherche{
 		$this->vue = new VueRecherche();
 	}
 
-    public function rechercheParNom(){
-		$this->vue->afficheParNom();
+    public function triDispo(){
+		$this->vue->afficheDispo($this->modele->triDispo());
     }
 
 }
