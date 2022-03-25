@@ -8,12 +8,20 @@ class VueRecherche {
 
 	public function afficheDispo($result){
         echo '<p>PC disponible</p>';
-        foreach ($result as $key ) {
+        foreach ($result as $key) {
 
             echo "<a>";
             echo "<div>";
-            echo "$key[0]";
-            echo "Commentaire : ".$key[1];
+            echo "$key[1]</br>";
+            echo "Commentaire : ".$key[2]."</br>";
+            echo "Applications : ";
+            foreach ($key[3] as $k) {
+                echo "$k[0] ";
+            }
+            echo "</br>System d'exploitation : ";
+            foreach ($key[4] as $k) {
+                echo "$k[0] ";
+            }
             echo "</div>";
             echo "</a>";
         }
