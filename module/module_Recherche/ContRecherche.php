@@ -17,7 +17,7 @@ class ContRecherche{
     }
 
     public function reservation(){
-        $this->vue->result($this->modele->reservation());
+        /*$this->vue->result(*/$this->modele->reservation()/*)*/;
     }
 }
 ?>

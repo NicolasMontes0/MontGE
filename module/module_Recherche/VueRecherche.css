@@ -1,5 +1,5 @@
 #PCInfo {
-    padding-left: 20px;
+    padding: 10px;
     border: solid;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -10,4 +10,5 @@
 #titre {
     text-align: center;
     color: red;
+    margin: 10px;
 }

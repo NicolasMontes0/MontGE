@@ -26,9 +26,10 @@ class VueRecherche {
                 echo "</div>
                 <div class='formulaire'>
                     <form action='index.php?action=reservation&module=Recherche' method='post'>
+                        <input type='hidden' name='pc' value='$key[1]' required></br>
                         <input type='text' name='identifiant' placeholder='Identifiant' required></br>
                         <input type='password' name='mdp' placeholder='Mot de passe' required></br>
-                        <input type='date' name='datefinReservation' required><label> Précisez la date de fin de la réservation </label></br>
+                        <input type='date' name='dateFinReservation' required><label> Précisez la date de fin de la réservation </label></br>
                         <input type='submit' value='Réserver'>
                     </form>
                 </div>
