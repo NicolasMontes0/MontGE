@@ -16,5 +16,8 @@ class ContRecherche{
 		$this->vue->afficheDispo($this->modele->triDispo());
     }
 
+    public function reservation(){
+        $this->vue->result($this->modele->reservation());
+    }
 }
 ?>

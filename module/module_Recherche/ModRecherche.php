@@ -13,6 +13,9 @@ class ModRecherche{
 				case "triDispo":
 					$this->controleur->triDispo();
 					break;
+                case "reservation":
+                    $this->controleur->reservation();
+                    break;
 				default:
 					?>
 						<script type="text/javascript"> 

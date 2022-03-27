@@ -29,5 +29,9 @@ class ModeleRecherche extends Connexion{
         }
         return $result;
 	}
+
+    public function reservation() {
+
+    }
 }
 ?>

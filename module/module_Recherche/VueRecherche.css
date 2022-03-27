@@ -1,0 +1,13 @@
+#PCInfo {
+    padding-left: 20px;
+    border: solid;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border-color: darkgray;
+    border-width: 2px;
+}
+
+#titre {
+    text-align: center;
+    color: red;
+}
