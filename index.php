@@ -8,6 +8,11 @@
 
 <body>
 <header>
+    <?php
+    require_once "Connexion.php";
+    session_start();
+    Connexion::initConnexion();
+    ?>
     <a href="index.php?module=Accueil"><img src="./images/icone.jpg"/ width = 150px></a>
     <div id="nav">
         <nav>
