@@ -1,0 +1,8 @@
+#cadre {
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    border-radius: 15px;
+    border-color: darkgray;
+    border-width: 2px;
+}
